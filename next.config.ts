@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export",
   reactStrictMode: true,
   compress: true,
+  images: { unoptimized: true },
 
   // CORS headers for API routes (Himbot pushes data from OpenClaw)
   async headers() {
